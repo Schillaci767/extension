@@ -1,0 +1,28 @@
+{
+    "name": "John and Nick's Awesome Adblocker",
+    "version": "1.0",
+    "description": "John and Nick's Adblocker",
+    "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+
+    "content_scripts": [{
+        "matches" : ["<all_urls>"],
+        "js": ["content.js"]
+        }],
+
+
+    "background": {
+        "scripts": ["blockAds.js"]
+    },
+
+    "browser_action": {
+        "default_icon": "party.png"
+    },
+
+    "icons": {
+        "16": "icons/Dog_16.png",
+        "48": "icons/Dog_48.png",
+        "128": "icons/Dog_128.png"
+    },
+    "manifest_version": 2
+}
+
